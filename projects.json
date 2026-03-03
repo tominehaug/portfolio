@@ -2,21 +2,21 @@
   {
     "id": "1",
     "image": {
-      "src": "images/rainydays.png",
+      "src": "images/rainydays2.jpeg",
       "alt": "Overview of home-page for RainyDays online store"
     },
     "title": "RainyDays",
-    "description": "Online store for rain jackets made for an introductory HTML and CSS course.",
+    "description": "Online store for rain jackets, made for an introductory HTML and CSS course.",
     "repository": "https://github.com/tominehaug/Rainydays",
     "live": "https://tominehaug.github.io/Rainydays/"
   },
   {
     "id": "2",
     "image": {
-      "src": "images/science-museum.png",
+      "src": "images/science-museum2.jpeg",
       "alt": "Overview of home-page for Community Science Museum"
     },
-    "title": "RainyDays",
+    "title": "Community Science Museum",
     "description": "Complete website for Community Science Museum, Trondheim. Semester project with HTML/CSS.",
     "repository": "https://github.com/tominehaug/Semester-Project-1",
     "live": "https://tominehaug.github.io/Semester-Project-1/"
@@ -24,8 +24,8 @@
   {
     "id": "3",
     "image": {
-      "src": "images/rainy-js.png",
-      "alt": "overview of product-page for RainyDays online store"
+      "src": "images/rainydays-js2.jpeg",
+      "alt": "Overview of product-page for RainyDays online store"
     },
     "title": "RainyDays w/JS",
     "description": "RainyDays online store with JavaScript logic, made for an introductory JavaScript course.",
