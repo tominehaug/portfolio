@@ -25,14 +25,15 @@ h1 {
   text-transform: uppercase;
 }
 
-header p {
+header a {
   font-family: "Google Sans Code", monospace;
   font-size: 22px;
   color: red;
+  text-decoration: none;
 }
 
-header p:hover {
-  text-decoration: underline;
+header a:hover {
+  border: dashed red 2px;
 }
 
 /* welcome section */
@@ -59,14 +60,6 @@ header p:hover {
   color: red;
 }
 
-/* image section */
-
-.image-section img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
 /* introduction section */
 
 #introduction {
@@ -85,8 +78,9 @@ header p:hover {
 #introduction p {
   font-family: "Google Sans Code", monospace;
   font-size: 20px;
-  height: 200px;
+  max-width: 620px;
   line-height: 2;
+  margin-bottom: 10px;
 }
 
 .wrapper {
@@ -107,10 +101,11 @@ header p:hover {
 /* tech stack */
 
 #techstack {
-  height: 250px;
+  min-height: 250px;
   background-image: url("../images/blue.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 2em;
 }
 
 #techstack h2 {
@@ -138,9 +133,11 @@ header p:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3vw;
+  align-items: center;
   background: transparent;
-  margin: 35px 20px;
+  margin: 50px 20px;
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -148,8 +145,83 @@ header p:hover {
 /* projects section */
 
 #projects {
-  height: 300px;
+  padding-top: 150px;
   border-bottom: dashed lightblue 4px;
+  text-align: center;
+}
+
+.projects {
+  padding: 150px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.arrows {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.left {
+  transform: rotate(45deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+#projects h2 {
+  font-family: "Google Sans Code", monospace;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card img {
+  max-width: 400px;
+}
+
+.card h3 {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: red;
+}
+
+.card p {
+  font-family: "Google Sans Code", monospace;
+  font-size: 20px;
+}
+
+.card a {
+  width: 400px;
+  background-color: aliceblue;
+  border: dashed red 2px;
+  text-align: center;
+  padding: 20px 40px;
+  font-family: "Carrois Gothic", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 30px;
+  color: red;
+}
+
+.card a:hover {
+  background-color: red;
+  color: aliceblue;
 }
 
 /* details section */
@@ -173,12 +245,12 @@ header p:hover {
 
 .contact {
   text-align: left;
-  margin-bottom: 110px;
+  margin-bottom: 120px;
 }
 
 .documents {
   text-align: right;
-  margin-top: 110px;
+  margin-top: 120px;
 }
 .contact,
 .documents {
@@ -188,7 +260,7 @@ header p:hover {
 }
 
 .contact a,
-.documents button {
+.documents a {
   font-family: "Google Sans Code", monospace;
   font-size: 25px;
   line-height: 1.5;
@@ -204,7 +276,7 @@ header p:hover {
   text-align: left;
 }
 
-.documents button {
+.documents a {
   border: dashed red 2px;
   text-align: right;
 }
@@ -229,4 +301,45 @@ footer p {
   text-align: center;
   padding: 20px 40px;
   margin: 0 auto;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #welcome div {
+    text-align: center;
+  }
+  .wrapper {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .left-portrait {
+    display: none;
+  }
+  .stack-wrapper {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    display: none;
+  }
+  #details {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 10px;
+    align-items: normal;
+  }
+  .contact,
+  .documents {
+    gap: 10px;
+    margin: 0;
+  }
 }
