@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: aliceblue;
+}
+
+/* header */
+
+header {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2;
+  color: red;
+  text-transform: uppercase;
+}
+
+/* welcome section */
+
+#welcome {
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome div {
+  font-family: "Google Sans Code", monospace;
+  font-size: 35px;
+}
+
+#welcome p {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: red;
+}
+
+/* image section */
+
+.image-section img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* introduction section */
+
+#introduction {
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 80px;
+}
+
+#introduction img {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  align-self: baseline;
+}
+
+#introduction p {
+  font-family: "Google Sans Code", monospace;
+  font-size: 20px;
+  height: 200px;
+  line-height: 2;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#introduction p span {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: red;
+}
+
+/* tech stack */
+
+#techstack {
+  background-image: url("../images/blue.jpg");
+}
