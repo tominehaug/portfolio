@@ -4,13 +4,17 @@
   background-color: aliceblue;
 }
 
+.fa-solid {
+  color: red;
+}
 /* header */
 
 header {
   height: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 15px;
 }
 
 h1 {
@@ -19,6 +23,16 @@ h1 {
   letter-spacing: 2;
   color: red;
   text-transform: uppercase;
+}
+
+header p {
+  font-family: "Google Sans Code", monospace;
+  font-size: 22px;
+  color: red;
+}
+
+header p:hover {
+  text-decoration: underline;
 }
 
 /* welcome section */
@@ -93,5 +107,126 @@ h1 {
 /* tech stack */
 
 #techstack {
+  height: 250px;
   background-image: url("../images/blue.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#techstack h2 {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: red;
+  background-color: aliceblue;
+  width: fit-content;
+  text-align: center;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+#techstack p {
+  font-family: "Google Sans Code", monospace;
+  font-size: 25px;
+  padding: 12px 10px;
+  margin-top: 20px;
+  background-color: aliceblue;
+}
+
+.stack-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: transparent;
+  margin: 35px 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/* projects section */
+
+#projects {
+  height: 300px;
+  border-bottom: dashed lightblue 4px;
+}
+
+/* details section */
+
+#details {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+}
+
+#details h2 {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: red;
+}
+
+.contact {
+  text-align: left;
+  margin-bottom: 110px;
+}
+
+.documents {
+  text-align: right;
+  margin-top: 110px;
+}
+.contact,
+.documents {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact a,
+.documents button {
+  font-family: "Google Sans Code", monospace;
+  font-size: 25px;
+  line-height: 1.5;
+  color: black;
+  text-decoration: none;
+}
+
+.contact :first-child {
+  border: dashed red 2px;
+}
+
+.contact a {
+  text-align: left;
+}
+
+.documents button {
+  border: dashed red 2px;
+  text-align: right;
+}
+
+/* footer section */
+
+footer {
+  height: 200px;
+  background-image: url("../images/blue.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer p {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: red;
+  background-color: aliceblue;
+  width: fit-content;
+  text-align: center;
+  padding: 20px 40px;
+  margin: 0 auto;
 }
