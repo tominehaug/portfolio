@@ -14,23 +14,21 @@
   </head>
   <body>
     <header>
-      <p>projects</p>
+      <a href="#projects">projects</a>
       <h1>Tomine Rønningen Haug</h1>
-      <p>contact</p>
+      <a href="#details">contact</a>
     </header>
     <section id="welcome">
       <div>Welcome to my portfolio!</div>
       <p>scroll for more info</p>
       <i class="fa-solid fa-arrow-down"></i>
     </section>
-    <div class="image-section">
-      <img src="images/blue.jpg" alt="" />
-    </div>
     <section id="introduction">
       <div class="wrapper">
         <img
           src="images/portrait_left.png"
           alt="self portrait facing the profile description"
+          class="left-portrait"
         />
         <div>
           <p>
@@ -45,6 +43,7 @@
         <img
           src="images/portrait_right.png"
           alt="self portrait facing the profile description"
+          class="right-portrait"
         />
       </div>
     </section>
@@ -59,23 +58,32 @@
         <p>Adobe Photoshop</p>
       </div>
     </section>
-    <section id="projects"></section>
+    <section id="projects">
+      <h2>Check out my selected projects below!</h2>
+      <div class="arrows">
+        <i class="fa-solid fa-arrow-down left"></i>
+        <i class="fa-solid fa-arrow-down"></i>
+        <i class="fa-solid fa-arrow-down right"></i>
+      </div>
+      <div class="projects"></div>
+    </section>
     <section id="details">
       <div class="contact">
         <h2>Contact</h2>
-        <a href="mailto:tomine_haug@live.no">Email me!</a>
+        <a href="mailto:tomine_haug@live.no">Email me here!</a>
         <a href="https://www.linkedin.com/in/tomine-rønningen-haug-b73568305 "
-          >Follow me!</a
+          >Follow me here!</a
         >
       </div>
       <div class="documents">
         <h2>Documents</h2>
-        <button>Resume</button>
-        <button>Cover letter</button>
+        <a href="documents/CV_Haug(eng).pdf" download="CV_Haug.pdf">Resume</a>
+        <a href="documents/CoverLetter_Haug.pdf" download="">Cover letter</a>
       </div>
     </section>
     <footer>
-      <p>back to top</p>
+      <a href="#"><p>back to top</p></a>
     </footer>
+    <script src="js/projects.js"></script>
   </body>
 </html>
