@@ -4,7 +4,7 @@ let projectCards = [];
 
 async function fetchProjects() {
   try {
-    const response = await fetch("../projects.json");
+    const response = await fetch("./projects.json");
     const data = await response.json();
     if (!response.ok)
       throw new Error(data.errors?.[0]?.message || "Failed network response");
