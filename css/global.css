@@ -180,6 +180,7 @@ header a:hover {
   font-family: "Google Sans Code", monospace;
   font-size: 35px;
   font-weight: normal;
+  margin: 0 5px;
 }
 
 .card {
